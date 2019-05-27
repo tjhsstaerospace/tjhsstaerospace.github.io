@@ -19,12 +19,34 @@
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
   <link href="../css/agency.css" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/css/lightgallery.css'>
   <link href="../css/carousel.css" rel="stylesheet">
-
 </head>
-
+<style>
+.lg-outer #lg-share {
+display:none !important;
+}
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 0;
+    padding-bottom: 0;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: #212529;
+  }
+  .cont{
+    padding-top: 0%;
+  }
+}
+@media (max-width: 992px) {
+  .cont{
+    padding-top: 100px;
+  }
+}
+}
+</style>
 <body id="page-top">
-
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="../white.png" alt="Logo" width="120" height="80"></a>
@@ -38,15 +60,15 @@
             <a class="nav-link js-scroll-trigger" href="../index">Home</a>
           </li>
           <li class="nav-item dropdown">
-     <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-       Resources
-     </a>
-     <div class="dropdown-menu">
-       <a class="dropdown-item" href="events">Events</a>
-       <a class="dropdown-item" href="files">Files and Links</a>
-       <a class="dropdown-item" href="officerresources">Officer Resources</a>
-     </div>
-   </li>
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Resources
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="events">Events</a>
+              <a class="dropdown-item" href="files">Files and Links</a>
+              <a class="dropdown-item" href="officerresources">Officer Resources</a>
+            </div>
+          </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="gallery">Gallery</a>
           </li>
@@ -62,132 +84,110 @@
   </nav>
 
   <!-- Header -->
-  <style>
-  header.masthead {
-    background-color: #black;
-    background-image: linear-gradient(-130deg, darkgrey, black);
-  }
-  </style>
-  <header class="masthead">
-    <div class="container">
-      <div class="intro-text">
-        <div class="intro-heading text-uppercase">Photo Gallery</div>
+<section>
+  <div class="cont">
+    <h1>TJRocketry Gallery</h1>
+<p class="lead">The finest rocketry club moments</p><a target = "_blank" href="https://www.facebook.com/TJAerospaceInitiative/" class="btn btn-primary btn-lg">Check us out on Facebook</a></div>
+
+    <div class="page-head">
+      <div class="demo-gallery">
+        <ul id="lightgallery">
+          <li href = "../img/bg-masthead.jpg"
+          data-sub-html="<h4>Title</h4><p>description</p>">
+          <a href="">
+            <img class="img-responsive" src = "../img/bg-masthead.jpg">
+            <div class="demo-gallery-poster">
+              <img src="https://sachinchoolur.github.io/lightGallery/static/img/zoom.png">
+            </div>
+          </a>
+        </li>
+        <li href = "../img/bg-masthead.jpg"
+        data-sub-html="<h4>Title</h4><p>description</p>" >
+        <a href="">
+          <img class="img-responsive" src = "../img/bg-masthead.jpg">
+          <div class="demo-gallery-poster">
+            <img src="https://sachinchoolur.github.io/lightGallery/static/img/zoom.png">
+          </div>
+        </a>
+      </li>
+      <li href = "../img/bg-masthead.jpg"
+      data-sub-html="<h4>Title</h4><p>description</p>" >
+      <a href="">
+        <img class="img-responsive" src = "../img/bg-masthead.jpg">
+        <div class="demo-gallery-poster">
+          <img src="https://sachinchoolur.github.io/lightGallery/static/img/zoom.png">
+        </div>
+      </a>
+    </li>
+    <li href = "../img/bg-masthead.jpg"
+    data-sub-html="<h4>Title</h4><p>description</p>" >
+    <a href="">
+      <img class="img-responsive" src = "../img/bg-masthead.jpg">
+      <div class="demo-gallery-poster">
+        <img src="https://sachinchoolur.github.io/lightGallery/static/img/zoom.png">
+      </div>
+    </a>
+    </li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <span class="copyright">Copyright &copy; TJ Rocketry 2019</span>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline social-buttons">
+          <li class="list-inline-item">
+            <a target="_blank" href="https://twitter.com">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a target="_blank" href="https://www.facebook.com/TJAerospaceInitiative/">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a target="_blank" href="https://linkedin.com">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks">
+          <li class="list-inline-item">
+            <a href="#">Privacy Policy</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">Terms of Use</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://opensource.org/licenses/MIT">License</a>
+          </li>
+        </ul>
       </div>
     </div>
-  </header>
-  <section>
-      <div class="wrapper">
-      <input checked type=radio name="slider" id="slide1" />
-      <input type=radio name="slider" id="slide2" />
-      <input type=radio name="slider" id="slide3" />
-      <input type=radio name="slider" id="slide4" />
-      <input type=radio name="slider" id="slide5" />
+  </div>
+</footer>
 
-      <div class="slider-wrapper">
-        <div class=inner>
-          <article>
-            <div class="info top-left">
-              <h3>Title</h3></div>
-            <img src="../img/bg-masthead.jpg" />
-          </article>
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="../js/jqBootstrapValidation.js"></script>
+<script src="../js/agency.min.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/js/lightgallery-all.min.js'></script>
+<script  src="../js/gallery.js"></script>
 
-          <article>
-            <div class="info top-left">
-              <h3>Title</h3></div>
-            <img src="../img/bg-masthead.jpg" />
-          </article>
-
-          <article>
-            <div class="info top-left">
-              <h3>Title</h3></div>
-            <img src="../img/bg-masthead.jpg" />
-          </article>
-
-          <article>
-            <div class="info top-left">
-              <h3>Title</h3></div>
-            <img src="../img/bg-masthead.jpg" />
-          </article>
-
-          <article>
-            <div class="info top-left">
-              <h3>Title</h3></div>
-            <img src="../img/bg-masthead.jpg" />
-          </article>
-        </div>
-        <!-- .inner -->
-      </div>
-      <!-- .slider-wrapper -->
-
-      <div class="slider-prev-next-control">
-        <label for=slide1></label>
-        <label for=slide2></label>
-        <label for=slide3></label>
-        <label for=slide4></label>
-        <label for=slide5></label>
-      </div>
-      <!-- .slider-prev-next-control -->
-
-      <div class="slider-dot-control">
-        <label for=slide1></label>
-        <label for=slide2></label>
-        <label for=slide3></label>
-        <label for=slide4></label>
-        <label for=slide5></label>
-      </div>
-      <!-- .slider-dot-control -->
-    </div>
-
-    </section>
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <span class="copyright">Copyright &copy; TJ Rocketry 2019</span>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a target="_blank" href="https://twitter.com">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a target="_blank" href="https://www.facebook.com/TJAerospaceInitiative/">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a target="_blank" href="https://linkedin.com">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-inline quicklinks">
-              <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://opensource.org/licenses/MIT">License</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-  <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="../js/jqBootstrapValidation.js"></script>
-  <script src="../js/contact_me.js"></script>
-  <script src="../js/agency.min.js"></script>
 
 </body>
 
