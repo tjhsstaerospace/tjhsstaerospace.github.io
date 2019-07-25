@@ -29,6 +29,7 @@
      height: 100%;
  }
  </style>
+
 <head>
 
   <meta charset="utf-8">
@@ -47,6 +48,35 @@
   <link href="../css/carousel.css" rel="stylesheet">
 
 </head>
+<style>
+
+@media (min-width: 425px) {
+  .page-section{
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  #mainNav {
+    padding-top: 0;
+    padding-bottom: 0;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: #212529;
+  }
+  .page-section{
+    padding-top: 150px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .page-section{
+    padding-top: 40%;
+  }
+}
+</style>
 
 <body id="page-top">
 
@@ -87,19 +117,7 @@
   </nav>
 
   <!-- Header -->
-  <style>
-  header.masthead {
-    background-color: #black;
-    background-image: linear-gradient(-130deg, darkgrey, black);
-  }
-  </style>
-  <header class="masthead">
-    <div class="container">
-      <div class="intro-text">
-        <div class="intro-heading text-uppercase">Event Schedule</div>
-      </div>
-    </div>
-  </header>
+
   <section>
       <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-10 align-self-end">
